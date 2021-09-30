@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+    <!-- javascript should have at least 3-5 containers -->
+    <!-- code below is just an example and can be removed/modified -->
+    <div id="startpage">
+        <h1>Press the button to begin the Quiz
+
+        <button id="startbtn">Start Quiz</button>
+        </h1>
+    </div>
+    <div id="Quiz">
+        <div id="quiztimer">time remaining</div>
+        <div id="question"><p>Questions</p>
+        </div>
+                    <button id="a" onclick="Answer('a')">A</button>
+                    <button id="b" onclick="Answer('b')">B</button>
+                    <button id="c" onclick="Answer('c')">C</button>
+                    <button id="d" onclick="Answer('d')">D</button>
+        <div id="answer"></div>
+    </div>
+    <div id="end">
+        <div id="finalscore"></div>
+        <input type="text" size="60" placeholder="enter your initials and score!" name="initials" id="initials"/>
+        <button id="submit">Submit Your Score</button>
+        <button id="restart" onclick="restartQuiz()">restart</button>
+    <div id="highscore">
+        <div id="highscore-name"></div>
+        <div id="highscore-score"></div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
